@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+:root {
+    --baseColor: #03BD04;
+    --lightColor: #FFFFFF;
+    --darkColor: #232323;
+    --baseFont: 'Open Sans', sans-serif;
+}
+
+/* ========== Custom CSS Starts ========== */
+
+/* ===== CSS For "Common Cases" Starts Here ===== */
+
+.grid_item {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+/* ======================== */
+
+.clickable_link {}
+
+.clickable_link a {
+    color: var(--lightColor);
+    background: #E92C2C;
+    border-bottom: 4px solid #BC1F1F;
+    border-radius: 5px;
+    font-family: var(--baseFont);
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 15px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.clickable_link a:hover {
+    background: #F13B3B;
+}
+
+.clickable_link a img {
+    margin-left: 5px;
+    max-width: 22px;
+}
+
+/* ======================== */
+
+.sticky-top {
+    top: 15px;
+}
+
+/* ===== CSS For "Common Cases" Ends Here ===== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ===== CSS For "Header" Starts Here ===== */
+
+.advertorialsss {
+    background: #273C51;
+    padding: 5px 0px;
+}
+
+.advertorialsss h5 {
+    color: var(--lightColor);
+    font-family: var(--baseFont);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.trust_logo_wrap {
+    background: var(--grayColor);
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--borderColor);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.trust_logo_wrap .trust_logo img {
+    max-width: 330px;
+}
+
+/* ===== CSS For "Header" Ends Here ===== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ===== CSS For "Indicator Menu" Starts Here ===== */
+
+.indicator_menu {}
+
+.indicator_menu ul {
+    margin-bottom: 10px;
+}
+
+.indicator_menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.indicator_menu ul li a {
+    color: #232323;
+    font-family: var(--baseHeading);
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+    padding-right: 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+.indicator_menu ul li a:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 12px;
+    color: #232323;
+    position: absolute;
+    right: -7px;
+    top: 3.5px;
+}
+
+.indicator_menu ul li:last-child a:after {
+    display: none;
+}
+
+/* ===== CSS For "Indicator Menu" Ends Here ===== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ===== CSS For "Common" Starts Here ===== */
+
+.middle_wrap {
+    padding: 20px 0px;
+    padding-bottom: 35px;
+}
+
+.middle_part {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 300px;
+    grid-template-columns: 1fr 300px;
+    grid-auto-rows: auto;
+    gap: 30px;
+}
+
+.single_part {
+    margin-bottom: 40px;
+}
+
+.single_part:last-child {
+    margin-bottom: 0px;
+}
+
+/* ===== CSS For "Common" Ends Here ===== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ===== CSS For "Article" Starts Here ===== */
+
+.article_title h2 {
+    color: #121212;
+    font-family: var(--baseFont);
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.heading h2 {
+    color: #121212;
+    font-family: var(--baseFont);
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.single_part h4 {
+    color: #121212;
+    font-family: var(--baseFont);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.single_part p {
+    color: #232323;
+    font-family: var(--baseFont);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.single_part p a {
+    font-weight: 700;
+    color: #167ac6;
+    text-decoration: none;
+}
+
+.single_part p:last-child {
+    margin-bottom: 0px;
+}
+
+.preview_image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.preview_image img {
+    width: 100%;
+}
+
+.bullet_points {}
+
+.bullet_points ul {
+    margin-bottom: 0px;
+}
+
+.bullet_points ul li {
+    color: #121212;
+    font-family: var(--baseFont);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    list-style: none;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.bullet_points ul li a {
+    font-weight: 700;
+    color: #167ac6;
+    text-decoration: none;
+}
+
+.bullet_points ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.bullet_points ul li:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    color: var(--baseColor);
+}
+
+.info_note {
+    background: #D9EDF7;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #BCE8F1;
+}
+
+.info_note p {
+    color: #3a87ad;
+}
+
+.alert_texts {
+    background: #FEF5C4;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #FADF98;
+}
+
+.alert_texts p {
+    font-style: italic;
+    color: #232323;
+}
+
+/* ===== CSS For "Article" Ends Here ===== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ===== CSS For "" Starts Here ===== */
+
+/* ===== CSS For "" Ends Here ===== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ===== CSS For "Sidebar" Starts Here ===== */
+
+.sidebar .author_box {
+    border: 1px solid #EBECEF;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar .author_box h4 {
+    color: var(--darkColor);
+    font-family: var(--baseFont);
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar .author_box .author_image {
+    margin-bottom: 10px;
+}
+
+.sidebar .author_box .author_image img {
+    width: 125px;
+    height: 125px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sidebar .author_box .author_info p {
+    color: var(--darkColor);
+    font-family: var(--baseFont);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.sidebar .product_box {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #EBECEF;
+    border-radius: 5px;
+}
+
+.sidebar .product_box a {
+    text-decoration: none;
+}
+
+.sidebar .product_box h3 {
+    color: var(--baseColor);
+    font-family: var(--baseFont);
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.sidebar .product_box h4 {
+    color: var(--darkColor);
+    font-family: var(--baseFont);
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.sidebar .product_box .product_image {
+    margin: 15px 0px;
+}
+
+.sidebar .product_box .product_image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sidebar .product_box .clickable_link {}
+
+.sidebar .product_box .clickable_link a {
+    padding: 12.5px 15px;
+    display: block;
+}
+
+.product_box ul {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.product_box ul li {
+    list-style: none;
+    margin-bottom: 5px;
+    color: #232323;
+    font-family: var(--baseParagraph);
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+    padding-left: 25px;
+}
+
+.product_box ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.product_box ul li:before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--baseColor);
+    position: absolute;
+    left: 0px;
+    top: -2px;
+}
+
+.product_box ul li a {
+    color: var(--baseColor);
+}
+
+/* ===== CSS For "Sidebar" Ends Here ===== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ===== CSS For "Footer" Starts Here ===== */
+
+.footer {
+    background: #121212;
+    padding: 12.5px 0px;
+}
+
+.footer p {
+    color: var(--lightColor);
+    font-family: var(--baseFont);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+/* ===== CSS For "Footer" Ends Here ===== */
+
+/* ============================== */
+
+/* ============================== */
+
+/* ============================== */
